@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Author: Alan Marsee -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Opportunity Compass student resources directory."
+  >
+
+  <title>Opportunity Compass | Resources</title>
+
+  <!-- External CSS shared across all pages -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS for the Resources page -->
+  <style>
+    .directory-hero {
+      padding: 90px 0;
+      background: linear-gradient(110deg, #f7f2e8, #eee6d8);
+    }
+
+    .resources-intro {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .directory-hero h1 {
+      margin-bottom: 24px;
+      font-size: clamp(3rem, 4.5vw, 4.5rem);
+      line-height: 1.05;
+    }
+
+    .directory-hero p {
+      color: var(--muted);
+    }
+
+    .resources-intro img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 464 / 420;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 18px 40px rgba(41, 24, 18, 0.15);
+    }
+
+    .resource-section {
+      margin-bottom: 55px;
+    }
+
+    .resource-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .resource-section h2 {
+      padding: 18px 22px;
+      background: #f4e7e6;
+      border-left: 5px solid var(--garnet);
+      border-radius: 8px;
+      font-size: 1.5rem;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .resource-item {
+      padding: 24px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    .resource-item h3 {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    .resource-item p {
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .resource-item a {
+      color: var(--garnet);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 800px) {
+      .directory-hero {
+        padding: 60px 0;
+      }
+
+      .resources-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .resources-intro img {
+        max-width: 540px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .resource-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="university-bar">
+      <div class="shell university-bar__inner">
+        <span>University of South Carolina</span>
+        <span>Walker Institute of International and Area Studies</span>
+      </div>
+    </div>
+
+    <div class="main-nav-wrap">
+      <div class="shell main-nav">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Opportunity Compass home"
+        >
+          <span class="brand-mark">WI</span>
+
+          <span>
+            <strong>Walker Institute</strong>
+            <small>Opportunity Compass</small>
+          </span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a
+            class="active"
+            href="resources.html"
+            aria-current="page"
+          >
+            Resources
+          </a>
+          <a href="assessment.html">Student Assessment</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="directory-hero">
+      <div class="shell resources-intro">
+        <div>
+          <p class="eyebrow">Student resources directory</p>
+
+          <h1>Find the right resources to launch your career.</h1>
+
+          <p>
+            Explore internships, global experiences, research opportunities,
+            résumé support, and campus programs that can help you turn your
+            interests into action.
+          </p>
+        </div>
+
+        <img
+          src="assets/resources-hero.png"
+          alt="Compass resting in the sand"
+        >
+      </div>
+    </section>
+
+    <section
+      class="section section--ivory"
+      aria-label="Resources by category"
+    >
+      <div class="shell">
+        <section class="resource-section">
+          <h2>Career Preparation &amp; Résumés</h2>
+
+          <div class="resource-grid">
+            <article class="resource-item">
+              <h3>Résumé for Undergraduate Writers</h3>
+              <p>
+                Build a clear, audience-aware résumé with USC writing support.
+              </p>
+              <a href="#">Writing Center →</a>
+            </article>
+
+            <article class="resource-item">
+              <h3>Career Fair</h3>
+              <p>
+                Explore employer partnerships and upcoming career events.
+              </p>
+              <a href="#">Career Center →</a>
+            </article>
+
+            <article class="resource-item">
+              <h3>Exploring Fields, Majors &amp; Careers</h3>
+              <p>
+                Connect academic interests with possible career pathways.
+              </p>
+              <a href="#">Career Guide →</a>
+            </article>
+
+            <article class="resource-item">
+              <h3>Internship Preparation Bundle</h3>
+              <p>
+                Prepare application materials for policy and technical roles.
+              </p>
+              <a href="#">View materials →</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="resource-section">
+          <h2>Global Experience &amp; Education</h2>
+
+          <div class="resource-grid">
+            <article class="resource-item">
+              <h3>Study Abroad Programs</h3>
+              <p>
+                Explore international learning and work experiences.
+              </p>
+              <a href="#">Education Abroad →</a>
+            </article>
+
+            <article class="resource-item">
+              <h3>International Networking</h3>
+              <p>
+                Practice professional communication in global settings.
+              </p>
+              <a href="#">Campus Experiences →</a>
+            </article>
+
+            <article class="resource-item">
+              <h3>National Security Education Program</h3>
+              <p>
+                Learn about language-focused study and service opportunities.
+              </p>
+              <a href="#">Fellowship Information →</a>
+            </article>
+
+            <article class="resource-item">
+              <h3>Foreign Service</h3>
+              <p>
+                Explore diplomatic careers, eligibility, and hiring pathways.
+              </p>
+              <a href="#">U.S. Department of State →</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="resource-section">
+          <h2>Research &amp; Public Service</h2>
+
+          <div class="resource-grid">
+            <article class="resource-item">
+              <h3>Undergraduate Research Opportunities</h3>
+              <p>
+                Find faculty-led research and student funding pathways.
+              </p>
+              <a href="#">Undergraduate Research →</a>
+            </article>
+
+            <article class="resource-item">
+              <h3>Getting Started with Research</h3>
+              <p>
+                Learn how to explore research interests and contact faculty.
+              </p>
+              <a href="#">Research Guide →</a>
+            </article>
+
+            <article class="resource-item">
+              <h3>Community-Engaged Learning</h3>
+              <p>
+                Connect coursework with local civic and nonprofit partners.
+              </p>
+              <a href="#">Service Learning →</a>
+            </article>
+
+            <article class="resource-item">
+              <h3>Research Starter Toolkit</h3>
+              <p>
+                Use a practical toolkit to explore topics and prepare outreach.
+              </p>
+              <a href="#">Open Toolkit →</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Inline CSS example -->
+        <p style="margin-top: 30px; color: #6c645e; font-size: 0.8rem;">
+          Website draft: individual resource destinations will be added
+          in a future update.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="brand brand--light">
+        <span class="brand-mark">WI</span>
+
+        <span>
+          <strong>Walker Institute</strong>
+          <small>University of South Carolina</small>
+        </span>
+      </div>
+
+      <div>
+        <strong>Opportunity Compass</strong>
+        <small>Walker Institute of International and Area Studies</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

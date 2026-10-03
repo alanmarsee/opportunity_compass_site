@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Author: Alan Marsee -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Opportunity Compass student self-assessment."
+  >
+
+  <title>Opportunity Compass | Student Assessment</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .assessment-hero {
+      padding: 90px 0;
+      background: linear-gradient(110deg, #f7f2e8, #eee6d8);
+    }
+
+    .assessment-hero h1 {
+      max-width: 760px;
+      margin-bottom: 24px;
+      font-size: clamp(3rem, 5vw, 5rem);
+      line-height: 1;
+    }
+
+    .assessment-hero p {
+      max-width: 700px;
+      color: var(--muted);
+    }
+
+    .assessment-layout {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 40px;
+    }
+
+    .question-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .question-card,
+    .result-card {
+      padding: 24px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    .question-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .question-card h3,
+    .result-card h3 {
+      margin-bottom: 6px;
+      font-size: 1.1rem;
+    }
+
+    .question-card p,
+    .result-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .open-label {
+      color: var(--garnet);
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .help-card {
+      padding: 28px;
+      background: #f4e7e6;
+      border-radius: 12px;
+    }
+
+    .help-card h2 {
+      font-size: 1.5rem;
+    }
+
+    .reading-grid,
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .reading-card {
+      padding: 24px;
+      background: white;
+      border-left: 4px solid var(--garnet);
+      border-radius: 8px;
+    }
+
+    .reading-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-family: var(--serif);
+    }
+
+    @media (max-width: 800px) {
+      .assessment-layout,
+      .reading-grid,
+      .results-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="university-bar">
+      <div class="shell university-bar__inner">
+        <span>University of South Carolina</span>
+        <span>Walker Institute of International and Area Studies</span>
+      </div>
+    </div>
+
+    <div class="main-nav-wrap">
+      <div class="shell main-nav">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">WI</span>
+
+          <span>
+            <strong>Walker Institute</strong>
+            <small>Opportunity Compass</small>
+          </span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="resources.html">Resources</a>
+          <a class="active" href="assessment.html">Student Assessment</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="assessment-hero">
+      <div class="shell">
+        <p class="eyebrow">Student assessment</p>
+
+        <h1>Discover new insights about yourself.</h1>
+
+        <p>
+          Use this self-assessment to explore your interests, strengths, and
+          goals. Your answers can help you identify opportunities that may
+          fit your academic and professional journey.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell assessment-layout">
+        <div>
+          <p class="eyebrow">Self-assessment tools</p>
+          <h2>Start with a structured self-assessment.</h2>
+
+          <div class="question-list">
+            <article class="question-card">
+              <div>
+                <h3>Focus</h3>
+                <p>Connect your interests with possible academic pathways.</p>
+              </div>
+              <span class="open-label">Open →</span>
+            </article>
+
+            <article class="question-card">
+              <div>
+                <h3>Major–Bridge Type Indicator</h3>
+                <p>Explore possible majors connected to your interests.</p>
+              </div>
+              <span class="open-label">Open →</span>
+            </article>
+
+            <article class="question-card">
+              <div>
+                <h3>Strengths and Values Inventory</h3>
+                <p>Identify experiences and values that motivate you.</p>
+              </div>
+              <span class="open-label">Open →</span>
+            </article>
+
+            <article class="question-card">
+              <div>
+                <h3>Work Values</h3>
+                <p>Understand what you need from a work environment.</p>
+              </div>
+              <span class="open-label">Open →</span>
+            </article>
+
+            <article class="question-card">
+              <div>
+                <h3>Transferable Skills</h3>
+                <p>Identify skills developed through courses and experiences.</p>
+              </div>
+              <span class="open-label">Open →</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="help-card">
+          <p class="eyebrow">Hands-on explanation</p>
+
+          <h2>Not a final answer—context is essential.</h2>
+
+          <p>
+            This assessment is a starting point. Review your results with an
+            advisor, instructor, mentor, or career coach before making major
+            academic or professional decisions.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--ivory">
+      <div class="shell">
+        <p class="eyebrow">Making sense of your results</p>
+        <h2>How to read your results.</h2>
+
+        <div class="reading-grid">
+          <article class="reading-card">
+            <strong>Notice the strongest signal</strong>
+            <p>Identify the interests, skills, or values that appear repeatedly.</p>
+          </article>
+
+          <article class="reading-card">
+            <strong>Match it to a pathway</strong>
+            <p>Connect your results with internships, research, or campus programs.</p>
+          </article>
+
+          <article class="reading-card">
+            <strong>Take one small action</strong>
+            <p>Choose a conversation, application, or resource to explore next.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <p class="eyebrow">Assessment results</p>
+        <h2>Match your strongest signal to a campus route.</h2>
+
+        <div class="results-grid">
+          <article class="result-card">
+            <h3>Explore ideas and solve problems</h3>
+            <p>
+              Research opportunities may help you investigate questions,
+              analyze information, and create new knowledge.
+            </p>
+          </article>
+
+          <article class="result-card">
+            <h3>Turn interests into experience</h3>
+            <p>
+              Internships may help you practice skills and understand
+              professional environments.
+            </p>
+          </article>
+
+          <article class="result-card">
+            <h3>Learn through action</h3>
+            <p>
+              Public service and community-engaged learning may connect your
+              academic interests with real-world needs.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="purpose-section">
+      <div class="shell purpose-section__inner">
+        <p class="eyebrow eyebrow--light">Ready for a next step?</p>
+
+        <h2>Use your strongest result to continue the conversation.</h2>
+
+        <p>
+          Keep your assessment results in mind, then browse resources or talk
+          with an advisor about possible next steps.
+        </p>
+
+        <div class="purpose-actions">
+          <a class="button button--light" href="resources.html">
+            Explore resources
+          </a>
+
+          <a class="button button--outline-light" href="about.html">
+            Learn about the project
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="brand brand--light">
+        <span class="brand-mark">WI</span>
+
+        <span>
+          <strong>Walker Institute</strong>
+          <small>University of South Carolina</small>
+        </span>
+      </div>
+
+      <div>
+        <strong>Opportunity Compass</strong>
+        <small>Walker Institute of International and Area Studies</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
